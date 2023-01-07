@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import counterReducer from "./slices/counterSlice";
+import equateReducer from "./slices/EquateSlice";
 
 
 
 export default combineReducers({
-    counter: counterReducer
+    equate: equateReducer
 })

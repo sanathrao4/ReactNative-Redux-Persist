@@ -24,7 +24,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import {persistor, store} from './reducerConfig/store';
-import Home from './screens/Home';
+import MyStack from './screens/MyStack';
 
 const Section: React.FC<
   PropsWithChildren<{
@@ -67,7 +67,7 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <NavigationContainer>
-          <Home />
+          <MyStack />
         </NavigationContainer>
       </PersistGate>
     </Provider>
